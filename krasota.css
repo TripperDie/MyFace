@@ -1,0 +1,132 @@
+.container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-areas: 
+    "name name name"
+    "video video video"
+    "buttons buttons buttons";
+    justify-items: center;
+    align-content: space-between;
+}
+body{
+    background-image:url( "zima.jpg");
+    background-size:cover;
+    background-position:center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:yellow;
+}
+.buttons{grid-area:buttons;}
+.video.noch {
+    display:none;
+}
+.black .video.noch{
+    display:initial;
+}
+.black .video.den {
+    display:none;
+}
+.video{
+    display:initial;
+    grid-area:video;
+    height: calc(60vw/16*9);
+    width: 60vw;
+    max-height: 80vh;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow: 0 0 15px black;
+}
+.buttons a {
+    margin:10px 5px;
+    display:inline-block;
+}
+.style{
+    height:25px;
+    width:45px;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 1em;
+    transition: 1s ease-in;
+    position:fixed;
+    left:10px;
+    top:10px;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+    color:white;
+    font-size: 13px;
+    font-weight: 700;
+}
+.style:hover{background-color: gold;} 
+.black{
+    background:url('https://c.pxhere.com/photos/28/40/milky_way_starry_sky_star_galaxies_night_sky_center_astrophotography_celestial_body-496460.jpg!d') !important
+
+}
+.black .style{
+    background-color: gold;
+    color:black;
+}
+.black .style:hover{background-color:white;}
+h1{
+    grid-area:name;
+    text-align: center;
+    font-family: "Comic Sans MS";
+    color: yellow;
+}
+
+.black h1{
+    color:hotpink;
+}
+.off{
+    display:none;
+}
+.black .off{
+    display:initial;
+}
+.black .on{
+    display:none;
+}
+.prev, .next{
+    position:fixed;
+    bottom:10px;
+}
+.next{
+    height:25px;
+    width:45px;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 1em;
+    transition: 1s ease-in;
+    position:fixed;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+    color:white;
+    font-size: 13px;
+    font-weight: 700;
+    right:10px;
+}
+.next:hover{background-color: gold;}
+.prev{
+    left:10px;
+}
+.next a, .prev a{
+    text-decoration: none;
+    color:black;
+}
+.black .next a, .black .prev a{
+    color:goldenrod;
+}
+.invisible{
+    display:none;
+}
+body.kobzon{
+    background:url("https://static.360tv.ru/media/article_media/efe442bc3abb49828605e62fa6d9b70a_201601251651.jpg");
+    background-size:contain;
+    height: 10000000vh;
+    display: flex;
+    margin: 0;
+    box-sizing: border-box;
+}
+

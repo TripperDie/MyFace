@@ -16,13 +16,13 @@ body{
     color:yellow;
 }
 .buttons{grid-area:buttons;}
-.video.noch {
+.video.night {
     display:none;
 }
-.black .video.noch{
+.black .video.night{
     display:initial;
 }
-.black .video.den {
+.black .video.day {
     display:none;
 }
 .video{
@@ -129,4 +129,22 @@ body.kobzon{
     margin: 0;
     box-sizing: border-box;
 }
-
+.styleKobzon{
+    height:25px;
+    width:45px;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 1em;
+    transition: 1s ease-in;
+    position:fixed;
+    left:10px;
+    top:10px;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+    color:white;
+    font-size: 13px;
+    font-weight: 700;
+}
+.styleKobzon:hover{background-color: gold;} 
